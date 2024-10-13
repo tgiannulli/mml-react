@@ -3,7 +3,7 @@ import { sanitizeUrl } from '@braintree/sanitize-url';
 
 import { Icon } from './Icon';
 
-export type ButtonProps = {
+export type SmallButtonProps = {
   /** Additional button class name */
   className?: string;
   /** The text to display in the button */
@@ -23,7 +23,7 @@ export type ButtonProps = {
 /**
  * Button can be used to open a URL, submit the form or trigger a select when clicked
  */
-export const Button: FC<ButtonProps> = ({ className = '', text, name, value, url = '', variant, icon }) => {
+export const SmallButton: FC<SmallButtonProps> = ({ className = '', text, name, value, url = '', variant, icon }) => {
   if (icon) {
     className += text ? ' mml-btn--with-icon' : ' mml-btn--icon';
   } else {
@@ -42,6 +42,7 @@ export const Button: FC<ButtonProps> = ({ className = '', text, name, value, url
   return (
     <button
       className={`mml-btn ${className}`}
+      style={{ fontSize: '12px', padding: '4px 8px', borderRadius: '5px', margin: '4px' }}
       type="submit"
       name={name}
       value={value}

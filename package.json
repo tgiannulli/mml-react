@@ -1,6 +1,6 @@
 {
   "name": "mml-react",
-  "version": "0.0.0-development",
+  "version": "0.0.5-development",
   "description": "MML (Message Markup Language) for React.",
   "author": "Getstream.io",
   "homepage": "https://getstream.github.io/mml-react/",
@@ -52,8 +52,10 @@
     "dayjs": "^1.10.4",
     "ical-expander": "^3.1.0",
     "linkifyjs": "^2.1.9",
+    "node-sass": "^9.0.0",
     "react-markdown": "^5.0.3",
-    "react-virtuoso": "^2.10.2"
+    "react-virtuoso": "^2.10.2",
+    "sass": "^1.79.5"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.1",

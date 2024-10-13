@@ -1,0 +1,103 @@
+---
+route: /components/button-list
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import { SmallButtonList } from './SmallButtonList.tsx';
+
+# SmallButtonList
+
+Display a list of buttons, a tyical usecase is allowing the user to select an option among a list. It is usually used in pair with some [`SmallButton`](/components/small_button)
+
+## Properties
+
+<Props of={SmallButtonList} />
+
+## MML string
+
+```xml
+<mml>
+  <small_button_list>
+    <small_button name="side" value="yes">
+      Yes!
+    </small_button>
+    <small_button name="side" value="no">
+      No, thanks
+    </small_button>
+  </small_button_list>
+</mml>
+```
+
+## Basic usage
+
+<Playground>
+  <MML
+    source={`
+    <mml>
+      <small_button_list>
+        <small_button name="side" value="yes">
+          Yes!
+        </small_button>
+        <butsmall_buttonon name="side" value="no">
+          No, thanks
+        </small_button>
+      </small_button_list>
+    </mml>
+  `}
+  />
+</Playground>
+
+## With `floating` variant
+
+<Playground>
+  <MML
+    source={`
+    <mml>
+      <small_button_list variant="floating">
+        <small_button variant="floating" name="side" value="yes">
+          Yes!
+        </small_button>
+        <small_button variant="floating" name="side" value="no">
+          No, thanks
+        </small_button>
+      </small_button_list>
+    </mml>
+  `}
+  />
+</Playground>
+
+<Playground>
+  <MML
+    source={`
+    <mml>
+      <text>How many days do you need?</text>
+      <small_button_list variant="floating">
+        <small_button variant="floating" name="side" value="1">1</small_button>
+        <small_button variant="floating" name="side" value="2">2</small_button>
+        <small_button variant="floating" name="side" value="3">3</small_button>
+        <small_button variant="floating" name="side" value="4">4</small_button>
+        <small_button variant="floating" name="side" value="5+">5+</small_button>
+      </small_button_list>
+    </mml>
+  `}
+  />
+</Playground>
+
+## With icon only buttons
+
+<Playground>
+  <MML
+    source={`
+    <mml>
+      <text>How do you feel about it?</text>
+      <small_button_list variant="floating">
+        <small_button variant="floating" name="feeling" value="1" icon="sentiment_dissatisfied" />
+        <small_button variant="floating" name="feeling" value="2" icon="sentiment_satisfied" />
+        <small_button variant="floating" name="feeling" value="3" icon="sentiment_very_dissatisfied" />
+        <small_button variant="floating" name="feeling" value="4" icon="sentiment_very_satisfied" />
+      </small_button_list>
+    </mml>
+  `}
+  />
+</Playground>

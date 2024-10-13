@@ -16,7 +16,7 @@ const compileScss = scss({
    * - https://github.com/formium/tsdx/pull/535
    * - https://github.com/formium/tsdx/issues/175
    */
-  output: function(styles, styleNodes) {
+  output: function (styles, styleNodes) {
     const dest = path.join(__dirname, 'dist/styles');
     if (!fs.existsSync(dest)) fs.mkdirSync(dest);
 

@@ -18,3 +18,5 @@ export * from './Row';
 export * from './Scheduler';
 export * from './Success';
 export * from './Text';
+export * from './SmallButton';
+export * from './SmallButtonList';

@@ -16,6 +16,8 @@ import {
   Text,
   Row,
   Number,
+  SmallButton,
+  SmallButtonList
 } from '../components';
 
 export type ConvertorType = (tag: MMLTag, children?: ReactElement[]) => ReactElement;
@@ -115,4 +117,22 @@ export const converters = {
   number: (tag: MMLTag) => {
     return <Number {...tag.attributes} key={tag.key} name={tag.attributes.name} value={tag.attributes.value} />;
   },
+  small_button: (tag: MMLTag) => {
+    return (
+      <SmallButton
+        {...tag.attributes}
+        key={tag.key}
+        text={tag.getText()}
+        name={tag.attributes.name}
+        value={tag.attributes.value}
+      />
+    );
+  },
+  small_button_list: (tag: MMLTag, children?: JSX.Element[]) => {
+    return (
+      <SmallButtonList {...tag.attributes} key={tag.key}>
+        {children}
+      </SmallButtonList>
+    );
+  }
 };

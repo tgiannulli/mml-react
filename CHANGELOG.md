@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4.7](https://github.com/GetStream/mml-react/) 2024-10-12
+### extension to components
+* forked repo would not build, needed to yarn add sass, endure the environment had node 18 and Python 3.10 installed
+* yarn update, yarn build and npm pack 
+* code changes include style/components folder and _base.scss, /components.tsx, convertes.tsx, index.tsx for all
+
 ## [0.4.7](https://github.com/GetStream/mml-react/releases/tag/v0.4.7) 2022-05-02
 
 ### Chore
